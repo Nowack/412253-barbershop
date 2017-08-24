@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Карточка товара</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
@@ -56,7 +58,7 @@
       <section class="product-info">
         <h2 class="visually-hidden">Описание товара</h2>
         <p>Есть в наличии</p>
-        <p>Артикул: dexter-ae</p>
+        <p class="product-article">Артикул: dexter-ae</p>
         <p>Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится всё, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор так же может стать отличным подарком.</p>
         <p class="product-price">
           <b>2900 руб.</b>
@@ -104,7 +106,7 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль</p>
-      <form class="appointment-form" action="https://echo.htmlacatemy.ru" method="post">
+      <form class="login-form" action="https://echo.htmlacatemy.ru" method="post">
         <p>
           <label for="appointment-login" class="visually-hidden">Логин</label>
           <input class="login-icon-user" id="appointment-login" type="text" name="login" placeholder="Логин">
@@ -114,14 +116,14 @@
           <input class="login-icon-password" id="appointment-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <label>
-          <input type="checkbox" name="remember" >
+          <label class="login-checkbox">
+          <input  type="checkbox" name="remember" >
           Запомните меня
           </label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
-        <button class="modsl-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
 
